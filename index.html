@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qlass</title>
+<meta name="description" content="Qlass. Every spot taken. Live class intelligence for boutique fitness studios.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#121212">
+<meta property="og:title" content="Qlass">
+<meta property="og:description" content="Every spot taken. Live class intelligence for boutique fitness studios.">
+<meta property="og:url" content="https://qlass.fit">
+<link rel="canonical" href="https://qlass.fit/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#121212; --ivory:#F2EEE6; --stone:#8C867C; --seat:#DBFF2A; --ring:rgba(242,238,230,.22); }
+* { box-sizing:border-box; margin:0; padding:0; }
+html, body { height:100%; }
+body { background:var(--ink); color:var(--ivory); font-family:Inter, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+main { min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:space-between; text-align:center; padding:clamp(24px,5vw,56px) clamp(16px,6vw,80px); max-width:1100px; margin:0 auto; }
+header { height:1px; }
+.logo { height:clamp(104px,15vw,210px); width:auto; max-width:100%; color:var(--ivory); display:block; margin:0 auto; }
+.logo .seat { fill:var(--seat); }
+.hero { display:flex; flex-direction:column; align-items:center; padding:6vh 0; width:100%; }
+h1 { font-family:"Inter Tight", Inter, sans-serif; font-weight:600; letter-spacing:-0.02em; line-height:1.1; font-size:clamp(24px,3vw,38px); margin-top:clamp(24px,3.5vw,44px); }
+.dots { display:grid; grid-template-columns:repeat(18,1fr); gap:clamp(5px,0.9vw,11px); margin-top:clamp(24px,3.5vw,40px); width:min(100%,600px); }
+.d { aspect-ratio:1; border-radius:50%; box-shadow:inset 0 0 0 1.5px var(--ring); animation:take .32s ease-out forwards; animation-delay:calc(var(--i) * 45ms + 300ms); }
+.d:last-child { animation-name:take-last; }
+@keyframes take { to { background:var(--ivory); box-shadow:none; } }
+@keyframes take-last { to { background:var(--seat); box-shadow:none; } }
+@media (prefers-reduced-motion: reduce) { .d { animation-duration:0s; animation-delay:0s; } }
+footer { display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:center; align-items:baseline; font-size:14px; color:var(--stone); }
+footer a { color:var(--ivory); text-decoration:none; border-bottom:1px solid var(--stone); padding-bottom:1px; }
+footer a:hover { border-color:var(--seat); }
+</style>
+</head>
+<body>
+<main>
+  <header></header>
+  <section class="hero">
+    <svg class="logo" viewBox="-2.0 -79.1 249.3 120.1" role="img" aria-label="Qlass"><circle cx="52.17" cy="-24.97" r="44.35" fill="none" stroke="currentColor" stroke-width="10.43"/><circle cx="36.52" cy="-40.62" r="6.00" fill="currentColor"/><circle cx="36.52" cy="-24.97" r="6.00" fill="currentColor"/><circle cx="36.52" cy="-9.31" r="6.00" fill="currentColor"/><circle cx="52.17" cy="-40.62" r="6.00" fill="currentColor"/><circle cx="52.17" cy="-24.97" r="6.00" fill="currentColor"/><circle cx="52.17" cy="-9.31" r="6.00" fill="currentColor"/><circle cx="67.83" cy="-40.62" r="6.00" fill="currentColor"/><circle cx="67.83" cy="-24.97" r="6.00" fill="currentColor"/><circle cx="67.83" cy="-9.31" r="6.00" class="seat"/><path d="M84.78 7.64L110.87 33.73" stroke="currentColor" stroke-width="11.74" stroke-linecap="round"/><path fill="currentColor" d="M119.28515625 -62.568359375H108.703125V0.0H119.28515625Z M139.202890625 0.7138671875C146.425546875 0.7138671875 150.1628515625 -2.3095703125 152.2624609375 -6.2568359375H152.4304296875V0.0H162.8444921875V-30.234375C162.8444921875 -39.47265625 155.999765625 -45.2255859375 144.4519140625 -45.2255859375C132.8620703125 -45.2255859375 125.6394140625 -39.388671875 125.1355078125 -30.5703125H135.339609375C135.6335546875 -34.3076171875 139.0769140625 -36.9951171875 144.241953125 -36.9951171875C149.3230078125 -36.9951171875 152.3464453125 -34.3076171875 152.3464453125 -30.5283203125V-30.1923828125C152.3464453125 -27.1689453125 149.53296875 -27.04296875 141.3025 -26.119140625C132.148203125 -25.1533203125 123.8757421875 -22.67578125 123.8757421875 -12.59765625C123.8757421875 -3.7373046875 130.38453125 0.7138671875 139.202890625 0.7138671875ZM141.80640625 -7.138671875C137.187265625 -7.138671875 134.2058203125 -9.1962890625 134.2058203125 -12.681640625C134.2058203125 -16.712890625 138.0691015625 -18.3505859375 142.6042578125 -19.0224609375C146.9714453125 -19.6943359375 151.0866796875 -20.3662109375 152.3884375 -21.2060546875V-16.4189453125C152.3884375 -11.25390625 148.7351171875 -7.138671875 141.80640625 -7.138671875Z M186.583515625 1.0498046875C197.5434765625 1.0498046875 205.396015625 -4.4091796875 205.396015625 -13.0595703125C205.396015625 -19.568359375 201.3227734375 -23.431640625 192.54640625 -25.279296875L184.567890625 -26.9169921875C180.872578125 -27.71484375 178.688984375 -29.3525390625 178.688984375 -31.998046875C178.688984375 -35.021484375 181.544453125 -37.373046875 186.2055859375 -37.373046875C191.0346875 -37.373046875 194.2680859375 -34.4755859375 194.3520703125 -30.5283203125H204.30421875C204.052265625 -39.640625 196.7036328125 -45.3095703125 185.9536328125 -45.3095703125C175.1196484375 -45.3095703125 168.106953125 -39.80859375 168.106953125 -31.662109375C168.106953125 -24.943359375 172.558125 -20.6181640625 181.040546875 -18.8544921875L188.599140625 -17.30078125C192.3364453125 -16.5029296875 194.646015625 -14.94921875 194.646015625 -12.26171875C194.646015625 -9.1123046875 191.53859375 -6.88671875 186.415546875 -6.88671875C181.12453125 -6.88671875 178.017109375 -9.3642578125 177.5551953125 -13.689453125H167.099140625C167.771015625 -4.1572265625 175.7915234375 1.0498046875 186.583515625 1.0498046875Z M226.9934375 1.0498046875C237.9533984375 1.0498046875 245.8059375 -4.4091796875 245.8059375 -13.0595703125C245.8059375 -19.568359375 241.7326953125 -23.431640625 232.956328125 -25.279296875L224.9778125 -26.9169921875C221.2825 -27.71484375 219.09890625 -29.3525390625 219.09890625 -31.998046875C219.09890625 -35.021484375 221.954375 -37.373046875 226.6155078125 -37.373046875C231.444609375 -37.373046875 234.6780078125 -34.4755859375 234.7619921875 -30.5283203125H244.714140625C244.4621875 -39.640625 237.1135546875 -45.3095703125 226.3635546875 -45.3095703125C215.5295703125 -45.3095703125 208.516875 -39.80859375 208.516875 -31.662109375C208.516875 -24.943359375 212.968046875 -20.6181640625 221.45046875 -18.8544921875L229.0090625 -17.30078125C232.7463671875 -16.5029296875 235.0559375 -14.94921875 235.0559375 -12.26171875C235.0559375 -9.1123046875 231.948515625 -6.88671875 226.82546875 -6.88671875C221.534453125 -6.88671875 218.42703125 -9.3642578125 217.9651171875 -13.689453125H207.5090625C208.1809375 -4.1572265625 216.2014453125 1.0498046875 226.9934375 1.0498046875Z"/></svg>
+    <h1>Every spot taken.</h1>
+    <div class="dots" aria-hidden="true"></div>
+  </section>
+  <footer>
+    <span>Live class intelligence for boutique fitness studios. Sydney.</span>
+    <a href="mailto:hello@qlass.fit">hello@qlass.fit</a>
+  </footer>
+</main>
+<script>
+const box = document.querySelector('.dots');
+for (let i = 0; i < 36; i++) { const d = document.createElement('span'); d.className = 'd'; d.style.setProperty('--i', i); box.appendChild(d); }
+</script>
+</body>
+</html>
